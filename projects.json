@@ -51,24 +51,24 @@
     "name": "Pinyin Tutor",
     "pitch": "Interactive web app that teaches Chinese pinyin with tone drills and instant feedback.",
     "category": "websites",
-    "status": "built",
+    "status": "live",
     "tech": [
       "HTML/CSS",
       "JavaScript"
     ],
-    "url": null,
+    "url": "https://yufliu.github.io/websites/pinyin-tutor/",
     "year": 2026
   },
   {
     "name": "Harmony Tea & Açaí",
     "pitch": "Complete multi-page website for an açaí-bowl and bubble-tea shop — menu, story, and visit pages.",
     "category": "websites",
-    "status": "built",
+    "status": "live",
     "tech": [
       "HTML/CSS",
       "JavaScript"
     ],
-    "url": null,
+    "url": "https://yufliu.github.io/websites/harmony-tea-acai/",
     "year": 2026
   },
   {
