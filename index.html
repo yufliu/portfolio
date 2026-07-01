@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yu Liu — Built with AI</title>
+<meta name="description" content="Projects Yu Liu has built with AI — apps, agents, and automations across real estate, finance, and trading.">
+<meta property="og:title" content="Yu Liu — Built with AI">
+<meta property="og:description" content="Apps, agents, and automations I've built with AI.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yufliu.github.io/portfolio/">
+<script>
+(function () {
+  var t = null;
+  try { t = localStorage.getItem("theme"); } catch (e) {}
+  if (t !== "light" && t !== "dark") {
+    t = (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches) ? "light" : "dark";
+  }
+  document.documentElement.setAttribute("data-theme", t);
+})();
+</script>
+<style>
+  :root {
+    --bg: #0b0e14;
+    --card: #141926;
+    --card-hover: #1a2032;
+    --accent: #5eead4;
+    --accent-contrast: #06281f;
+    --text: #e6e9f0;
+    --muted: #8b93a7;
+    --border: #232a3d;
+    --live: #34d399;
+    --built: #60a5fa;
+    --progress: #fbbf24;
+  }
+  html[data-theme="light"] {
+    --bg: #f4f6fa;
+    --card: #ffffff;
+    --card-hover: #f0f3f8;
+    --accent: #0d9488;
+    --accent-contrast: #ffffff;
+    --text: #1a2233;
+    --muted: #5a6478;
+    --border: #dde3ee;
+    --live: #047857;
+    --built: #1d4ed8;
+    --progress: #b45309;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    transition: background 0.2s, color 0.2s;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 48px 20px 32px; }
+  header { position: relative; }
+  .theme-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 42px;
+    height: 42px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font-size: 1.15rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: border-color 0.15s;
+  }
+  .theme-toggle:hover { border-color: var(--accent); }
+  header h1 { font-size: 2.4rem; letter-spacing: -0.02em; }
+  header .tagline { color: var(--muted); font-size: 1.15rem; margin-top: 6px; }
+  .stats { display: flex; gap: 28px; margin-top: 24px; flex-wrap: wrap; }
+  .stat .num { font-size: 1.7rem; font-weight: 700; color: var(--accent); }
+  .stat .label { color: var(--muted); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.06em; }
+  .chips { display: flex; gap: 8px; margin: 32px 0 20px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 7px 15px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .chip:hover { border-color: var(--accent); }
+  .chip[aria-pressed="true"] { background: var(--accent); color: var(--accent-contrast); border-color: var(--accent); font-weight: 600; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: background 0.15s, transform 0.15s;
+  }
+  .card:hover { background: var(--card-hover); transform: translateY(-2px); }
+  .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
+  .card h3 { font-size: 1.08rem; letter-spacing: -0.01em; }
+  .badge { font-size: 0.72rem; font-weight: 700; padding: 3px 9px; border-radius: 999px; white-space: nowrap; text-transform: uppercase; letter-spacing: 0.05em; }
+  .badge-live { background: rgba(52,211,153,0.15); color: var(--live); }
+  .badge-built { background: rgba(96,165,250,0.15); color: var(--built); }
+  .badge-progress { background: rgba(251,191,36,0.15); color: var(--progress); }
+  .pitch { color: var(--muted); font-size: 0.92rem; flex-grow: 1; }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .tag { font-size: 0.75rem; color: var(--muted); border: 1px solid var(--border); padding: 2px 8px; border-radius: 6px; }
+  .card-bottom { display: flex; justify-content: space-between; align-items: center; margin-top: 4px; }
+  .year { color: var(--muted); font-size: 0.8rem; }
+  .visit {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .visit:hover { text-decoration: underline; }
+  .empty { color: var(--muted); padding: 40px 0; text-align: center; }
+  footer { color: var(--muted); font-size: 0.85rem; text-align: center; padding: 40px 20px 32px; }
+  @media (max-width: 420px) {
+    .wrap { padding-top: 32px; }
+    header h1 { font-size: 1.8rem; }
+    header .tagline { font-size: 1rem; }
+    .stats { gap: 20px; }
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Switch between dark and light mode">☀️</button>
+    <h1>Yu Liu</h1>
+    <p class="tagline">I build things with AI — apps, agents, and automations across real estate, finance, and trading.</p>
+    <div class="stats">
+      <div class="stat"><div class="num" id="stat-total">0</div><div class="label">Projects</div></div>
+      <div class="stat"><div class="num" id="stat-live">0</div><div class="label">Live</div></div>
+      <div class="stat"><div class="num" id="stat-agents">0</div><div class="label">AI Agents</div></div>
+    </div>
+  </header>
+
+  <nav class="chips" aria-label="Project filters">
+    <button class="chip" data-filter="all" aria-pressed="true">All</button>
+    <button class="chip" data-filter="live" aria-pressed="false">🟢 Live</button>
+    <button class="chip" data-filter="agents" aria-pressed="false">AI Agents</button>
+    <button class="chip" data-filter="websites" aria-pressed="false">Websites</button>
+    <button class="chip" data-filter="real-estate" aria-pressed="false">Real Estate</button>
+    <button class="chip" data-filter="automation" aria-pressed="false">Automation</button>
+    <button class="chip" data-filter="finance" aria-pressed="false">Finance</button>
+  </nav>
+
+  <main class="grid" id="grid"></main>
+</div>
+
+<footer>Built with Claude Code · Updated <span id="updated"><!-- UPDATED -->July 2026<!-- /UPDATED --></span></footer>
+
+<!-- PROJECTS-DATA-START -->
+<script type="application/json" id="projects-data">
+[
+  {"name": "FI-System", "pitch": "Interactive financial-independence planner that models the path from a day job to living on real-estate income.", "category": "finance", "status": "live", "tech": ["JavaScript", "Chart.js"], "url": "https://yufliu.github.io/fi-system", "year": 2026},
+  {"name": "OC-Leads", "pitch": "Lead-tracking dashboard for mid-term-rental deals in Orange County, with a Supabase backend and PIN-protected contact pages.", "category": "real-estate", "status": "live", "tech": ["JavaScript", "Supabase"], "url": "https://yufliu.github.io/oc-leads", "year": 2026},
+  {"name": "Chase Sapphire LA Dining Guide", "pitch": "Curated guide to maximizing the Chase Sapphire $150 dining credit across LA restaurants.", "category": "finance", "status": "live", "tech": ["HTML/CSS", "JavaScript"], "url": "https://yufliu.github.io/chase-sapphire-la", "year": 2026},
+  {"name": "WinryStays", "pitch": "Direct-booking website for a short/mid-term rental brand in Tallahassee, with SEO built for organic bookings.", "category": "websites", "status": "live", "tech": ["WordPress", "SEO"], "url": "https://winrystays.com", "year": 2025},
+  {"name": "Pinyin Tutor", "pitch": "Interactive web app that teaches Chinese pinyin with tone drills and instant feedback.", "category": "websites", "status": "built", "tech": ["HTML/CSS", "JavaScript"], "url": null, "year": 2026},
+  {"name": "Harmony Tea & Açaí", "pitch": "Complete multi-page website for an açaí-bowl and bubble-tea shop — menu, story, and visit pages.", "category": "websites", "status": "built", "tech": ["HTML/CSS", "JavaScript"], "url": null, "year": 2026},
+  {"name": "BathPros Remodeling", "pitch": "Animated marketing site for a bathroom-remodeling brand, with motion design and a code-rendered promo video.", "category": "websites", "status": "built", "tech": ["React", "Framer Motion", "Remotion"], "url": null, "year": 2026},
+  {"name": "Pokémon Restock Monitor", "pitch": "Watches retailer sites for Pokémon trading-card restocks and pings me on Telegram within seconds.", "category": "automation", "status": "live", "tech": ["Python", "Telegram API"], "url": null, "year": 2026},
+  {"name": "Crypto Intelligence", "pitch": "Six AI agents that each emulate a well-known crypto thinker, debate market narratives, and produce trade theses.", "category": "agents", "status": "built", "tech": ["Python", "Claude API"], "url": null, "year": 2026},
+  {"name": "Investment Due-Diligence Plugin", "pitch": "Claude Code plugin that fans out five research sub-agents — filings, news, competitors, financials, bear case — and merges them into one memo.", "category": "agents", "status": "built", "tech": ["Claude Agent SDK"], "url": null, "year": 2026},
+  {"name": "Social Arbitrage Agent", "pitch": "Watches Reddit, X, and TikTok for consumer trends going mainstream and maps them to stock tickers.", "category": "agents", "status": "built", "tech": ["Python", "Claude API"], "url": null, "year": 2026},
+  {"name": "Trading-Card Investing Agent", "pitch": "Tracks social-media buzz around Pokémon and One Piece trading cards to spot demand surges before prices move.", "category": "agents", "status": "built", "tech": ["Python", "Claude API"], "url": null, "year": 2026},
+  {"name": "LLM Council", "pitch": "Runs one question past a council of top AI models, has them critique each other anonymously, and synthesizes a final answer.", "category": "agents", "status": "built", "tech": ["Python", "OpenRouter"], "url": null, "year": 2026},
+  {"name": "Airbnb Guest Messaging", "pitch": "AI concierge that auto-answers Airbnb guest messages with property-specific knowledge and escalates when unsure.", "category": "automation", "status": "built", "tech": ["Python", "Claude API", "Docker"], "url": null, "year": 2026},
+  {"name": "Mid-Term Rental Onboarding", "pitch": "End-to-end mid-term-rental booking flow: application form, e-sign lease, and deposit collection, fully automated.", "category": "automation", "status": "built", "tech": ["n8n", "DocuSeal", "Stripe"], "url": null, "year": 2026},
+  {"name": "Airbnb Pricing Dashboard", "pitch": "Dashboard comparing profitability of 3-day vs. 90-day stays across my listings to find the best pricing strategy.", "category": "real-estate", "status": "built", "tech": ["Next.js", "TypeScript"], "url": null, "year": 2026},
+  {"name": "Budget Analyzer", "pitch": "Turns raw credit-card exports into an interactive spending report with budget groups, flags, and monthly trends.", "category": "finance", "status": "built", "tech": ["Python", "pandas"], "url": null, "year": 2026},
+  {"name": "Job-Alert Telegram Bot", "pitch": "Scans local job boards for Mandarin-friendly part-time work and texts matches to my dad daily.", "category": "automation", "status": "built", "tech": ["Python", "Telegram API"], "url": null, "year": 2026}
+]
+</script>
+<!-- PROJECTS-DATA-END -->
+
+<script>
+(function () {
+  var STATUS_LABEL = { "live": "Live", "built": "Built", "in-progress": "In progress" };
+  var STATUS_CLASS = { "live": "badge-live", "built": "badge-built", "in-progress": "badge-progress" };
+
+  function loadProjects() {
+    return JSON.parse(document.getElementById("projects-data").textContent);
+  }
+
+  var projects = loadProjects();
+  var grid = document.getElementById("grid");
+  var chips = Array.prototype.slice.call(document.querySelectorAll(".chip"));
+
+  document.getElementById("stat-total").textContent = projects.length;
+  document.getElementById("stat-live").textContent = projects.filter(function (p) { return p.status === "live"; }).length;
+  document.getElementById("stat-agents").textContent = projects.filter(function (p) { return p.category === "agents"; }).length;
+
+  function el(tag, className, text) {
+    var node = document.createElement(tag);
+    if (className) node.className = className;
+    if (text) node.textContent = text;
+    return node;
+  }
+
+  function buildCard(p) {
+    var card = el("article", "card");
+
+    var top = el("div", "card-top");
+    top.appendChild(el("h3", null, p.name));
+    top.appendChild(el("span", "badge " + (STATUS_CLASS[p.status] || "badge-built"), STATUS_LABEL[p.status] || p.status));
+    card.appendChild(top);
+
+    card.appendChild(el("p", "pitch", p.pitch));
+
+    var tags = el("div", "tags");
+    p.tech.forEach(function (t) { tags.appendChild(el("span", "tag", t)); });
+    card.appendChild(tags);
+
+    var bottom = el("div", "card-bottom");
+    bottom.appendChild(el("span", "year", String(p.year)));
+    if (p.url) {
+      var link = el("a", "visit", "Visit →");
+      link.href = p.url;
+      link.target = "_blank";
+      link.rel = "noopener";
+      bottom.appendChild(link);
+    }
+    card.appendChild(bottom);
+
+    return card;
+  }
+
+  function render(filter) {
+    grid.innerHTML = "";
+    var shown = projects.filter(function (p) {
+      if (filter === "all") return true;
+      if (filter === "live") return p.status === "live";
+      return p.category === filter;
+    });
+    if (shown.length === 0) {
+      grid.appendChild(el("p", "empty", "Nothing here yet."));
+      return;
+    }
+    shown.forEach(function (p) { grid.appendChild(buildCard(p)); });
+  }
+
+  function setFilter(chip) {
+    chips.forEach(function (c) { c.setAttribute("aria-pressed", String(c === chip)); });
+    render(chip.getAttribute("data-filter"));
+  }
+
+  chips.forEach(function (chip) {
+    chip.addEventListener("click", function () { setFilter(chip); });
+  });
+
+  var toggle = document.getElementById("theme-toggle");
+  function syncToggleIcon() {
+    var light = document.documentElement.getAttribute("data-theme") === "light";
+    toggle.textContent = light ? "🌙" : "☀️";
+  }
+  toggle.addEventListener("click", function () {
+    var next = document.documentElement.getAttribute("data-theme") === "light" ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", next);
+    try { localStorage.setItem("theme", next); } catch (e) {}
+    syncToggleIcon();
+  });
+  syncToggleIcon();
+
+  render("all");
+})();
+</script>
+</body>
+</html>

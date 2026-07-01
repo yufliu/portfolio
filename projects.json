@@ -1,0 +1,220 @@
+[
+  {
+    "name": "FI-System",
+    "pitch": "Interactive financial-independence planner that models the path from a day job to living on real-estate income.",
+    "category": "finance",
+    "status": "live",
+    "tech": [
+      "JavaScript",
+      "Chart.js"
+    ],
+    "url": "https://yufliu.github.io/fi-system",
+    "year": 2026
+  },
+  {
+    "name": "OC-Leads",
+    "pitch": "Lead-tracking dashboard for mid-term-rental deals in Orange County, with a Supabase backend and PIN-protected contact pages.",
+    "category": "real-estate",
+    "status": "live",
+    "tech": [
+      "JavaScript",
+      "Supabase"
+    ],
+    "url": "https://yufliu.github.io/oc-leads",
+    "year": 2026
+  },
+  {
+    "name": "Chase Sapphire LA Dining Guide",
+    "pitch": "Curated guide to maximizing the Chase Sapphire $150 dining credit across LA restaurants.",
+    "category": "finance",
+    "status": "live",
+    "tech": [
+      "HTML/CSS",
+      "JavaScript"
+    ],
+    "url": "https://yufliu.github.io/chase-sapphire-la",
+    "year": 2026
+  },
+  {
+    "name": "WinryStays",
+    "pitch": "Direct-booking website for a short/mid-term rental brand in Tallahassee, with SEO built for organic bookings.",
+    "category": "websites",
+    "status": "live",
+    "tech": [
+      "WordPress",
+      "SEO"
+    ],
+    "url": "https://winrystays.com",
+    "year": 2025
+  },
+  {
+    "name": "Pinyin Tutor",
+    "pitch": "Interactive web app that teaches Chinese pinyin with tone drills and instant feedback.",
+    "category": "websites",
+    "status": "built",
+    "tech": [
+      "HTML/CSS",
+      "JavaScript"
+    ],
+    "url": null,
+    "year": 2026
+  },
+  {
+    "name": "Harmony Tea & Açaí",
+    "pitch": "Complete multi-page website for an açaí-bowl and bubble-tea shop — menu, story, and visit pages.",
+    "category": "websites",
+    "status": "built",
+    "tech": [
+      "HTML/CSS",
+      "JavaScript"
+    ],
+    "url": null,
+    "year": 2026
+  },
+  {
+    "name": "BathPros Remodeling",
+    "pitch": "Animated marketing site for a bathroom-remodeling brand, with motion design and a code-rendered promo video.",
+    "category": "websites",
+    "status": "built",
+    "tech": [
+      "React",
+      "Framer Motion",
+      "Remotion"
+    ],
+    "url": null,
+    "year": 2026
+  },
+  {
+    "name": "Pokémon Restock Monitor",
+    "pitch": "Watches retailer sites for Pokémon trading-card restocks and pings me on Telegram within seconds.",
+    "category": "automation",
+    "status": "live",
+    "tech": [
+      "Python",
+      "Telegram API"
+    ],
+    "url": null,
+    "year": 2026
+  },
+  {
+    "name": "Crypto Intelligence",
+    "pitch": "Six AI agents that each emulate a well-known crypto thinker, debate market narratives, and produce trade theses.",
+    "category": "agents",
+    "status": "built",
+    "tech": [
+      "Python",
+      "Claude API"
+    ],
+    "url": null,
+    "year": 2026
+  },
+  {
+    "name": "Investment Due-Diligence Plugin",
+    "pitch": "Claude Code plugin that fans out five research sub-agents — filings, news, competitors, financials, bear case — and merges them into one memo.",
+    "category": "agents",
+    "status": "built",
+    "tech": [
+      "Claude Agent SDK"
+    ],
+    "url": null,
+    "year": 2026
+  },
+  {
+    "name": "Social Arbitrage Agent",
+    "pitch": "Watches Reddit, X, and TikTok for consumer trends going mainstream and maps them to stock tickers.",
+    "category": "agents",
+    "status": "built",
+    "tech": [
+      "Python",
+      "Claude API"
+    ],
+    "url": null,
+    "year": 2026
+  },
+  {
+    "name": "Trading-Card Investing Agent",
+    "pitch": "Tracks social-media buzz around Pokémon and One Piece trading cards to spot demand surges before prices move.",
+    "category": "agents",
+    "status": "built",
+    "tech": [
+      "Python",
+      "Claude API"
+    ],
+    "url": null,
+    "year": 2026
+  },
+  {
+    "name": "LLM Council",
+    "pitch": "Runs one question past a council of top AI models, has them critique each other anonymously, and synthesizes a final answer.",
+    "category": "agents",
+    "status": "built",
+    "tech": [
+      "Python",
+      "OpenRouter"
+    ],
+    "url": null,
+    "year": 2026
+  },
+  {
+    "name": "Airbnb Guest Messaging",
+    "pitch": "AI concierge that auto-answers Airbnb guest messages with property-specific knowledge and escalates when unsure.",
+    "category": "automation",
+    "status": "built",
+    "tech": [
+      "Python",
+      "Claude API",
+      "Docker"
+    ],
+    "url": null,
+    "year": 2026
+  },
+  {
+    "name": "Mid-Term Rental Onboarding",
+    "pitch": "End-to-end mid-term-rental booking flow: application form, e-sign lease, and deposit collection, fully automated.",
+    "category": "automation",
+    "status": "built",
+    "tech": [
+      "n8n",
+      "DocuSeal",
+      "Stripe"
+    ],
+    "url": null,
+    "year": 2026
+  },
+  {
+    "name": "Airbnb Pricing Dashboard",
+    "pitch": "Dashboard comparing profitability of 3-day vs. 90-day stays across my listings to find the best pricing strategy.",
+    "category": "real-estate",
+    "status": "built",
+    "tech": [
+      "Next.js",
+      "TypeScript"
+    ],
+    "url": null,
+    "year": 2026
+  },
+  {
+    "name": "Budget Analyzer",
+    "pitch": "Turns raw credit-card exports into an interactive spending report with budget groups, flags, and monthly trends.",
+    "category": "finance",
+    "status": "built",
+    "tech": [
+      "Python",
+      "pandas"
+    ],
+    "url": null,
+    "year": 2026
+  },
+  {
+    "name": "Job-Alert Telegram Bot",
+    "pitch": "Scans local job boards for Mandarin-friendly part-time work and texts matches to my dad daily.",
+    "category": "automation",
+    "status": "built",
+    "tech": [
+      "Python",
+      "Telegram API"
+    ],
+    "url": null,
+    "year": 2026
+  }
+]
