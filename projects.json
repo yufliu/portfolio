@@ -365,5 +365,29 @@
     ],
     "url": null,
     "year": 2026
+  },
+  {
+    "name": "UF Graduation AR Filter",
+    "pitch": "A 3D augmented-reality face filter made for the University of Florida class of 2020, so graduates could celebrate on camera when in-person ceremonies were cancelled.",
+    "category": "3d",
+    "status": "built",
+    "tech": [
+      "Spark AR",
+      "3D modeling"
+    ],
+    "url": null,
+    "year": 2020
+  },
+  {
+    "name": "Instagram AR Effects",
+    "pitch": "A set of 3D augmented-reality effects modeled in Blender and published on Instagram, from face filters to world effects.",
+    "category": "3d",
+    "status": "built",
+    "tech": [
+      "Blender",
+      "Spark AR"
+    ],
+    "url": "https://www.instagram.com/yu_creates/",
+    "year": 2021
   }
 ]
