@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yu Liu — Built with AI</title>
-<meta name="description" content="Projects Yu Liu has built with AI — apps, agents, and automations across real estate, finance, and trading.">
-<meta property="og:title" content="Yu Liu — Built with AI">
+<title>Yu Liu | Built with AI</title>
+<meta name="description" content="Projects Yu Liu has built with AI: apps, agents, and automations for real estate, operations, and finance.">
+<meta property="og:title" content="Yu Liu | Built with AI">
 <meta property="og:description" content="Apps, agents, and automations I've built with AI.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://yufliu.github.io/portfolio/">
@@ -74,6 +74,9 @@
   .theme-toggle:hover { border-color: var(--accent); }
   header h1 { font-size: 2.4rem; letter-spacing: -0.02em; }
   header .tagline { color: var(--muted); font-size: 1.15rem; margin-top: 6px; }
+  header .links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+  header .links a { font-size: .9rem; font-weight: 600; text-decoration: none; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--border, rgba(127,127,127,.35)); color: inherit; }
+  header .links a:hover { border-color: currentColor; }
   .stats { display: flex; gap: 28px; margin-top: 24px; flex-wrap: wrap; }
   .stat .num { font-size: 1.7rem; font-weight: 700; color: var(--accent); }
   .stat .label { color: var(--muted); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.06em; }
@@ -136,7 +139,12 @@
   <header>
     <button class="theme-toggle" id="theme-toggle" aria-label="Switch between dark and light mode">☀️</button>
     <h1>Yu Liu</h1>
-    <p class="tagline">I build things with AI — apps, agents, and automations across real estate, finance, and trading.</p>
+    <p class="tagline">I build things with AI: apps, agents, and automations for real estate, operations, and finance.</p>
+    <nav class="links" aria-label="Links">
+      <a href="https://www.linkedin.com/in/yufliu/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/yufliu" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.instagram.com/yu_creates/" target="_blank" rel="noopener">Instagram (3D &amp; AR)</a>
+    </nav>
     <div class="stats">
       <div class="stat"><div class="num" id="stat-total">0</div><div class="label">Projects</div></div>
       <div class="stat"><div class="num" id="stat-live">0</div><div class="label">Live</div></div>
@@ -163,28 +171,27 @@
 <!-- PROJECTS-DATA-START -->
 <script type="application/json" id="projects-data">
 [
-  {"name": "Orange County Monthly Rentals", "pitch": "Two lead-generation sites for furnished 30+ night stays in Irvine and Costa Mesa, aimed at insurance-displaced families and corporate travelers. Every inquiry lands in email and a phone alert within seconds, with a reply already drafted.", "category": "real-estate", "status": "live", "tech": ["Cloudflare Workers", "D1", "SEO"], "url": "https://irvinemonthlyrentals.com", "year": 2026},
-  {"name": "Continuous Learning Now", "pitch": "Online continuing-education school for Florida nail and cosmetology licensees — course catalog, checkout, and a learning platform that tracks progress to completion.", "category": "websites", "status": "live", "tech": ["Web", "LMS", "SEO"], "url": "https://www.continuouslearningnow.com", "year": 2026},
+  {"name": "Continuous Learning Now", "pitch": "Online continuing-education school for Florida nail and cosmetology licensees: course catalog, checkout, and a learning platform that tracks progress to completion.", "category": "websites", "status": "live", "tech": ["Web", "LMS", "SEO"], "url": "https://www.continuouslearningnow.com", "year": 2026},
   {"name": "Focus", "pitch": "A focus app that turns big seasonal goals into one key task per day, then asks for an honest end-of-day review. Invite-only for friends.", "category": "websites", "status": "live", "tech": ["Next.js", "Supabase"], "url": "https://focus-yufliuai.vercel.app", "year": 2026},
-  {"name": "One Piece TCG Investing Course", "pitch": "A course page on flipping and investing in One Piece trading cards — what to buy, when to sell, and how to read the market.", "category": "finance", "status": "live", "tech": ["HTML/CSS", "JavaScript"], "url": "https://yufliu.github.io/opcards/", "year": 2026},
+  {"name": "One Piece TCG Investing Course", "pitch": "A course page on flipping and investing in One Piece trading cards: what to buy, when to sell, and how to read the market.", "category": "finance", "status": "live", "tech": ["HTML/CSS", "JavaScript"], "url": "https://yufliu.github.io/opcards/", "year": 2026},
   {"name": "Reel Editor", "pitch": "Drop in raw phone clips and get back a finished vertical reel: filler and dead air cut, animated captions, on-screen graphics, music, and a call to action. Runs entirely on a Mac.", "category": "agents", "status": "built", "tech": ["Whisper", "Claude", "Remotion"], "url": null, "year": 2026},
   {"name": "Jarvis", "pitch": "A personal assistant with a voice HUD you can talk to, plus an automatic 7am morning brief covering the day ahead.", "category": "agents", "status": "built", "tech": ["Python", "Claude", "ElevenLabs"], "url": null, "year": 2026},
   {"name": "G2 Lyrics", "pitch": "A smart-glasses app that listens to the music playing around you, identifies the song, and scrolls time-synced karaoke lyrics across the lenses.", "category": "agents", "status": "built", "tech": ["TypeScript", "Even Realities G2", "AudD"], "url": null, "year": 2026},
   {"name": "/debate", "pitch": "A second-opinion tool for AI-written plans: Claude argues its plan against OpenAI's Codex, answers each objection with evidence it actually ran, and flags any disagreement that's left for a human to decide.", "category": "agents", "status": "live", "tech": ["Claude Code", "Codex CLI"], "url": null, "year": 2026},
   {"name": "Airbnb Review Feed", "pitch": "Keeps a rental website's reviews fresh with zero clicks: every two weeks it collects new 5-star guest reviews from public Airbnb listings, filters out lukewarm ones, and republishes the feed.", "category": "automation", "status": "live", "tech": ["Node.js", "launchd"], "url": null, "year": 2026},
   {"name": "Skool Scout", "pitch": "Scans five online communities each weekday, ranks the open questions by how well I can answer them, and drafts replies backed by real examples.", "category": "agents", "status": "live", "tech": ["Python", "Claude"], "url": null, "year": 2026},
-  {"name": "AgentWatch", "pitch": "An always-on Mac menu-bar panel that shows AI coding usage, limit reset times, and every running agent — and turns red when one is stuck waiting for me.", "category": "automation", "status": "live", "tech": ["TypeScript", "macOS"], "url": null, "year": 2026},
+  {"name": "AgentWatch", "pitch": "An always-on Mac menu-bar panel that shows AI coding usage, limit reset times, and every running agent, and turns red when one is stuck waiting for me.", "category": "automation", "status": "live", "tech": ["TypeScript", "macOS"], "url": null, "year": 2026},
   {"name": "Outage-Credit Claimer", "pitch": "Once a week it checks every internet account on one login, claims any outage credits that are owed, and logs what came back.", "category": "automation", "status": "live", "tech": ["Python", "Playwright"], "url": null, "year": 2026},
   {"name": "FI-System", "pitch": "Interactive financial-independence planner that models the path from a day job to living on real-estate income.", "category": "finance", "status": "live", "tech": ["JavaScript", "Chart.js"], "url": "https://yufliu.github.io/fi-system", "year": 2026},
   {"name": "OC-Leads", "pitch": "Lead-tracking dashboard for mid-term-rental deals in Orange County, with a Supabase backend and PIN-protected contact pages.", "category": "real-estate", "status": "live", "tech": ["JavaScript", "Supabase"], "url": "https://yufliu.github.io/oc-leads", "year": 2026},
   {"name": "Chase Sapphire LA Dining Guide", "pitch": "Curated guide to maximizing the Chase Sapphire $150 dining credit across LA restaurants.", "category": "finance", "status": "live", "tech": ["HTML/CSS", "JavaScript"], "url": "https://yufliu.github.io/chase-sapphire-la", "year": 2026},
   {"name": "WinryStays", "pitch": "Direct-booking website for a short/mid-term rental brand in Tallahassee, with SEO built for organic bookings.", "category": "websites", "status": "live", "tech": ["WordPress", "SEO"], "url": "https://winrystays.com", "year": 2025},
   {"name": "Pinyin Tutor", "pitch": "Interactive web app that teaches Chinese pinyin with tone drills and instant feedback.", "category": "websites", "status": "live", "tech": ["HTML/CSS", "JavaScript"], "url": "https://yufliu.github.io/websites/pinyin-tutor/", "year": 2026},
-  {"name": "Harmony Tea & Açaí", "pitch": "Complete multi-page website for an açaí-bowl and bubble-tea shop — menu, story, and visit pages.", "category": "websites", "status": "live", "tech": ["HTML/CSS", "JavaScript"], "url": "https://yufliu.github.io/websites/harmony-tea-acai/", "year": 2026},
+  {"name": "Harmony Tea & Açaí", "pitch": "Complete multi-page website for an açaí-bowl and bubble-tea shop, with menu, story, and visit pages.", "category": "websites", "status": "live", "tech": ["HTML/CSS", "JavaScript"], "url": "https://yufliu.github.io/websites/harmony-tea-acai/", "year": 2026},
   {"name": "BathPros Remodeling", "pitch": "Animated marketing site for a bathroom-remodeling brand, with motion design and a code-rendered promo video.", "category": "websites", "status": "built", "tech": ["React", "Framer Motion", "Remotion"], "url": null, "year": 2026},
   {"name": "Pokémon Restock Monitor", "pitch": "Watches retailer sites for Pokémon trading-card restocks and pings me on Telegram within seconds.", "category": "automation", "status": "live", "tech": ["Python", "Telegram API"], "url": null, "year": 2026},
   {"name": "Crypto Intelligence", "pitch": "Six AI agents that each emulate a well-known crypto thinker, debate market narratives, and produce trade theses.", "category": "agents", "status": "built", "tech": ["Python", "Claude API"], "url": null, "year": 2026},
-  {"name": "Investment Due-Diligence Plugin", "pitch": "Claude Code plugin that fans out five research sub-agents — filings, news, competitors, financials, bear case — and merges them into one memo.", "category": "agents", "status": "built", "tech": ["Claude Agent SDK"], "url": null, "year": 2026},
+  {"name": "Investment Due-Diligence Plugin", "pitch": "Claude Code plugin that fans out five research sub-agents (filings, news, competitors, financials, bear case) and merges them into one memo.", "category": "agents", "status": "built", "tech": ["Claude Agent SDK"], "url": null, "year": 2026},
   {"name": "Social Arbitrage Agent", "pitch": "Watches Reddit, X, and TikTok for consumer trends going mainstream and maps them to stock tickers.", "category": "agents", "status": "built", "tech": ["Python", "Claude API"], "url": null, "year": 2026},
   {"name": "Trading-Card Investing Agent", "pitch": "Tracks social-media buzz around Pokémon and One Piece trading cards to spot demand surges before prices move.", "category": "agents", "status": "built", "tech": ["Python", "Claude API"], "url": null, "year": 2026},
   {"name": "LLM Council", "pitch": "Runs one question past a council of top AI models, has them critique each other anonymously, and synthesizes a final answer.", "category": "agents", "status": "built", "tech": ["Python", "OpenRouter"], "url": null, "year": 2026},

@@ -1,20 +1,7 @@
 [
   {
-    "name": "Orange County Monthly Rentals",
-    "pitch": "Two lead-generation sites for furnished 30+ night stays in Irvine and Costa Mesa, aimed at insurance-displaced families and corporate travelers. Every inquiry lands in email and a phone alert within seconds, with a reply already drafted.",
-    "category": "real-estate",
-    "status": "live",
-    "tech": [
-      "Cloudflare Workers",
-      "D1",
-      "SEO"
-    ],
-    "url": "https://irvinemonthlyrentals.com",
-    "year": 2026
-  },
-  {
     "name": "Continuous Learning Now",
-    "pitch": "Online continuing-education school for Florida nail and cosmetology licensees — course catalog, checkout, and a learning platform that tracks progress to completion.",
+    "pitch": "Online continuing-education school for Florida nail and cosmetology licensees: course catalog, checkout, and a learning platform that tracks progress to completion.",
     "category": "websites",
     "status": "live",
     "tech": [
@@ -39,7 +26,7 @@
   },
   {
     "name": "One Piece TCG Investing Course",
-    "pitch": "A course page on flipping and investing in One Piece trading cards — what to buy, when to sell, and how to read the market.",
+    "pitch": "A course page on flipping and investing in One Piece trading cards: what to buy, when to sell, and how to read the market.",
     "category": "finance",
     "status": "live",
     "tech": [
@@ -126,7 +113,7 @@
   },
   {
     "name": "AgentWatch",
-    "pitch": "An always-on Mac menu-bar panel that shows AI coding usage, limit reset times, and every running agent — and turns red when one is stuck waiting for me.",
+    "pitch": "An always-on Mac menu-bar panel that shows AI coding usage, limit reset times, and every running agent, and turns red when one is stuck waiting for me.",
     "category": "automation",
     "status": "live",
     "tech": [
@@ -210,7 +197,7 @@
   },
   {
     "name": "Harmony Tea & Açaí",
-    "pitch": "Complete multi-page website for an açaí-bowl and bubble-tea shop — menu, story, and visit pages.",
+    "pitch": "Complete multi-page website for an açaí-bowl and bubble-tea shop, with menu, story, and visit pages.",
     "category": "websites",
     "status": "live",
     "tech": [
@@ -259,7 +246,7 @@
   },
   {
     "name": "Investment Due-Diligence Plugin",
-    "pitch": "Claude Code plugin that fans out five research sub-agents — filings, news, competitors, financials, bear case — and merges them into one memo.",
+    "pitch": "Claude Code plugin that fans out five research sub-agents (filings, news, competitors, financials, bear case) and merges them into one memo.",
     "category": "agents",
     "status": "built",
     "tech": [
