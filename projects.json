@@ -1,5 +1,154 @@
 [
   {
+    "name": "Orange County Monthly Rentals",
+    "pitch": "Two lead-generation sites for furnished 30+ night stays in Irvine and Costa Mesa, aimed at insurance-displaced families and corporate travelers. Every inquiry lands in email and a phone alert within seconds, with a reply already drafted.",
+    "category": "real-estate",
+    "status": "live",
+    "tech": [
+      "Cloudflare Workers",
+      "D1",
+      "SEO"
+    ],
+    "url": "https://irvinemonthlyrentals.com",
+    "year": 2026
+  },
+  {
+    "name": "Continuous Learning Now",
+    "pitch": "Online continuing-education school for Florida nail and cosmetology licensees — course catalog, checkout, and a learning platform that tracks progress to completion.",
+    "category": "websites",
+    "status": "live",
+    "tech": [
+      "Web",
+      "LMS",
+      "SEO"
+    ],
+    "url": "https://www.continuouslearningnow.com",
+    "year": 2026
+  },
+  {
+    "name": "Focus",
+    "pitch": "A focus app that turns big seasonal goals into one key task per day, then asks for an honest end-of-day review. Invite-only for friends.",
+    "category": "websites",
+    "status": "live",
+    "tech": [
+      "Next.js",
+      "Supabase"
+    ],
+    "url": "https://focus-yufliuai.vercel.app",
+    "year": 2026
+  },
+  {
+    "name": "One Piece TCG Investing Course",
+    "pitch": "A course page on flipping and investing in One Piece trading cards — what to buy, when to sell, and how to read the market.",
+    "category": "finance",
+    "status": "live",
+    "tech": [
+      "HTML/CSS",
+      "JavaScript"
+    ],
+    "url": "https://yufliu.github.io/opcards/",
+    "year": 2026
+  },
+  {
+    "name": "Reel Editor",
+    "pitch": "Drop in raw phone clips and get back a finished vertical reel: filler and dead air cut, animated captions, on-screen graphics, music, and a call to action. Runs entirely on a Mac.",
+    "category": "agents",
+    "status": "built",
+    "tech": [
+      "Whisper",
+      "Claude",
+      "Remotion"
+    ],
+    "url": null,
+    "year": 2026
+  },
+  {
+    "name": "Jarvis",
+    "pitch": "A personal assistant with a voice HUD you can talk to, plus an automatic 7am morning brief covering the day ahead.",
+    "category": "agents",
+    "status": "built",
+    "tech": [
+      "Python",
+      "Claude",
+      "ElevenLabs"
+    ],
+    "url": null,
+    "year": 2026
+  },
+  {
+    "name": "G2 Lyrics",
+    "pitch": "A smart-glasses app that listens to the music playing around you, identifies the song, and scrolls time-synced karaoke lyrics across the lenses.",
+    "category": "agents",
+    "status": "built",
+    "tech": [
+      "TypeScript",
+      "Even Realities G2",
+      "AudD"
+    ],
+    "url": null,
+    "year": 2026
+  },
+  {
+    "name": "/debate",
+    "pitch": "A second-opinion tool for AI-written plans: Claude argues its plan against OpenAI's Codex, answers each objection with evidence it actually ran, and flags any disagreement that's left for a human to decide.",
+    "category": "agents",
+    "status": "live",
+    "tech": [
+      "Claude Code",
+      "Codex CLI"
+    ],
+    "url": null,
+    "year": 2026
+  },
+  {
+    "name": "Airbnb Review Feed",
+    "pitch": "Keeps a rental website's reviews fresh with zero clicks: every two weeks it collects new 5-star guest reviews from public Airbnb listings, filters out lukewarm ones, and republishes the feed.",
+    "category": "automation",
+    "status": "live",
+    "tech": [
+      "Node.js",
+      "launchd"
+    ],
+    "url": null,
+    "year": 2026
+  },
+  {
+    "name": "Skool Scout",
+    "pitch": "Scans five online communities each weekday, ranks the open questions by how well I can answer them, and drafts replies backed by real examples.",
+    "category": "agents",
+    "status": "live",
+    "tech": [
+      "Python",
+      "Claude"
+    ],
+    "url": null,
+    "year": 2026
+  },
+  {
+    "name": "AgentWatch",
+    "pitch": "An always-on Mac menu-bar panel that shows AI coding usage, limit reset times, and every running agent — and turns red when one is stuck waiting for me.",
+    "category": "automation",
+    "status": "live",
+    "tech": [
+      "TypeScript",
+      "macOS"
+    ],
+    "url": null,
+    "year": 2026
+  },
+  {
+    "name": "Outage-Credit Claimer",
+    "pitch": "Once a week it checks every internet account on one login, claims any outage credits that are owed, and logs what came back.",
+    "category": "automation",
+    "status": "live",
+    "tech": [
+      "Python",
+      "Playwright"
+    ],
+    "url": null,
+    "year": 2026
+  },
+  {
     "name": "FI-System",
     "pitch": "Interactive financial-independence planner that models the path from a day job to living on real-estate income.",
     "category": "finance",
